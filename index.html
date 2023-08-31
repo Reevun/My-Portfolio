@@ -143,7 +143,7 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terima Kasih!</strong> Pesan kamu sudah kami terima.
+              <strong>Terima Kasih!</strong> Pesan kamu sudah terkirim !!!
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="Star-Contact-Form">
@@ -205,6 +205,10 @@
             // tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset formnya
+            form.reset();
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));

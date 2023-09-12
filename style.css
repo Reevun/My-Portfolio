@@ -10,3 +10,9 @@ footer {
 section {
   padding-top: 5rem;
 }
+
+.logo img {
+  width: 100px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
